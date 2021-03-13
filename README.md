@@ -14,7 +14,7 @@ We used this dataset to predict/recommend data-preparation steps (particularly f
 
 ## Data link
 
-Data can be downloaded from [this link](https://onedrive.live.com/?authkey=!AGJdHNaO9kJuoLs&id=4EEA81351AF2D84B!7570&cid=4EEA81351AF2D84B). Each invokation is stored under `[OPERATOR]/[GITREPO]_[FILEPATH]_cell[CELLID]_[OPERATORID]/`, containing `data.csv` and `param.json` which stores the dataframe (dumped as csv) before an operator invokation and the parameter used in the invokation. 
+Data can be downloaded from [this link](https://onedrive.live.com/?authkey=!AGJdHNaO9kJuoLs&id=4EEA81351AF2D84B!7570&cid=4EEA81351AF2D84B). Each instance of an operator invocation is stored under a separate sub-folder with a structure of `[OPERATOR]/[GITREPO]_[FILEPATH]_cell[CELLID]_[OPERATORID]/`. Each sub-folder contains a `data.csv` for the input dataframe fed into the operator (dumped as a csv), and also a `param.json` for the exact parameters used in this invocation (the ground-truth we want to predict in [1]). 
 
 ## License
 
